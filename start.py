@@ -1,4 +1,3 @@
-from cgitb import reset
 import re
 from unittest import result
 from mal import Anime
