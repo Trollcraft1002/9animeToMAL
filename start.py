@@ -124,29 +124,5 @@ if failed:
         print(failedAnimes)
     print('please add them mannualy')
 
-
-
-"""
-<anime>
-        <series_animedb_id>6547</series_animedb_id>
-        <series_title><![CDATA[Angel Beats!]]></series_title>
-        <series_type>TV</series_type>
-        <series_episodes>13</series_episodes>
-        <my_id>0</my_id>
-        <my_watched_episodes>13</my_watched_episodes>
-        <my_start_date>0000-00-00</my_start_date>
-        <my_finish_date>0000-00-00</my_finish_date>
-        <my_rated></my_rated>
-        <my_score>9</my_score>
-        <my_dvd></my_dvd>
-        <my_storage></my_storage>
-        <my_status>Completed</my_status>
-        <my_comments><![CDATA[]]></my_comments>
-        <my_times_watched>0</my_times_watched>
-        <my_rewatch_value>Low</my_rewatch_value>
-        <my_tags><![CDATA[]]></my_tags>
-        <my_rewatching>0</my_rewatching>
-        <my_rewatching_ep>0</my_rewatching_ep>
-        <update_on_import>0</update_on_import>
-    </anime>
-"""
+#Hiwwo there... You probably are wondering why this is here...
+#Well to be honest I have no idea why and how does this work...but it does the job done :D
