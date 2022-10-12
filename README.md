@@ -14,9 +14,9 @@
 
 
 ### REQUIREMENTS  
-- 🐍 Python3  
-  
+- 🐍 Python  
 
+- ⌨️```pip install -r requirements.txt```
 
 
 ### HOW TO USE  
@@ -25,8 +25,7 @@
 
 - ✏️Rename the export to export.txt and put it in the same folder as the script  
   
-
-
+- ⌨️```python ./start.py```
 
 ### AFTER GETTING THE XML FILE  
 - Get MAL export from here: http://myanimelist.net/panel.php?go=export  
