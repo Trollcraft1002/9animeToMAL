@@ -99,7 +99,7 @@ try:
                 newline = '\n'
                 )
                 
-                f2 = open("./testFile.xml", "a",  encoding="utf-8")
+                f2 = open("./senpaii.xml", "a",  encoding="utf-8")
                 f2.write('\n')
                 f2.write(result)
                 f2.write('\n')
