@@ -124,5 +124,5 @@ if failed:
         print(failedAnimes)
     print('please add them mannualy')
 
-    #Hiwwol there... you are probably wondering why this is here...right?
-    #Well... I'm trying to figure why and how this works :D 
+#Hiwwo there... You probably are wondering why this is here... right?
+#Well... to be honest I am trying to figure why and how does this work... but it does the job done :D

@@ -34,7 +34,7 @@
 - Now paste the output in the MAL exported file  
   
 
-- Now import it back to MAL here: https://myanimelist.net/import.php  
+- And finally import it back to MAL here: https://myanimelist.net/import.php  
   
 
 
