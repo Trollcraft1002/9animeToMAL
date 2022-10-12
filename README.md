@@ -1,11 +1,49 @@
-<h1 align="center">Hi 👋, I'm Trollcraft...well that's my gamer name</h1>
-<h3 align="center">Instruction on how to use</h3>
+<div align="center">
+<img src="https://i.postimg.cc/GtrzGgVJ/Untitled-1.png" align="center" style="width: 100%" />
+</div>  
+  
 
-- ⚡ Fun fact **This is my first ever python project**
+### <div align="center">9Anime to MAL</div>  
+  
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.scala-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg" alt="scala" width="40" height="40"/> </a> </p>
+
+### REQUIREMENTS  
+- 🐍 Python3  
+  
+
+
+
+### HOW TO USE  
+- 🗒️You will need to get yours 9anime export in TXT file  
+  
+
+- ✏️Rename the export to export.txt and put it in the same folder as the script  
+  
+
+
+
+### AFTER GETTING THE XML FILE  
+- Get MAL export from here: http://myanimelist.net/panel.php?go=export  
+  
+
+- Now paste the output in the MAL exported file  
+  
+
+- Now import it back to MAL here: https://myanimelist.net/import.php  
+  
+
+
+
+### FUN FACT  
+- ⚡This is my first ever project on python 🙂  
+  
+
+<div align="right">
+<img src="https://komarev.com/ghpvc/?username=Trollcraft1002&&style=flat-square" align="right" />
+</div>  
+
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
