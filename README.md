@@ -1,9 +1,14 @@
+
+### <div align="center">9Anime to MAL</div>  
+
+
+
 <div align="center">
-<img src="https://i.postimg.cc/GtrzGgVJ/Untitled-1.png" align="center" style="width: 100%" />
+<img src="https://i.postimg.cc/GtrzGgVJ/Untitled-1.png" align="center" style="width: 80%" />
 </div>  
   
 
-### <div align="center">9Anime to MAL</div>  
+
   
 
 
@@ -44,6 +49,3 @@
 </div>  
 
 <br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
