@@ -23,7 +23,7 @@ for ids in matches:
     animesID.append(ids[1])
 
 
-f2 = open("./testFile.xml", "w",  encoding="utf-8")
+f2 = open("./senpaii.xml", "w",  encoding="utf-8")
 f2.write("")
 f2.close()
 
