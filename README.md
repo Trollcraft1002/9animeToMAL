@@ -20,6 +20,8 @@
 
 
 ### HOW TO USE  
+- 🎥Youtube Video: https://youtu.be/jd7cEDvwj1c
+
 - 🗒️You will need to get yours 9anime export in TXT file  
   
 
