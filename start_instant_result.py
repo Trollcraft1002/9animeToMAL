@@ -12,10 +12,21 @@ except FileNotFoundError:
     print("Please make sure export.txt exists")
     exit()
 
+try:
+    f = Path(__file__).with_name('export.txt')
+    with f.open('r',  encoding="utf-8") as f:
+        matches2 = re.findall(r"(# )([A-Za-z:0-9 !?\-\\'\"\\\’,.~\/!@#$%^&*()_\+ä;:\[\]‘é`]+)", f.read())
+except FileNotFoundError:
+    print("Please make sure export.txt exists")
+    exit()
+
+
 animesID = []
+animeName = []
 for ids in matches:
     animesID.append(ids[1])
-
+for names in matches2:
+    animeName.append(names[1])
 
 f2 = open("./senpaii.xml", "w",  encoding="utf-8")
 f2.write("")
@@ -23,9 +34,10 @@ f2.close()
 
 pbar = tqdm(desc="Progress", total= len(animesID))
 
+i=0
 try:
+    
     for animeID in animesID:
-        
                 
         doc, tag, text = Doc().tagtext()
         try:
@@ -34,7 +46,7 @@ try:
                     with tag('series_animedb_id'):
                         text(animeID)
                     with tag('series_title'):
-                        text("")
+                        text(animeName[i])
                     with tag('series_type'):
                         text("")
                     with tag('series_episodes'):
@@ -85,9 +97,9 @@ try:
                 f2.close
         except (Exception, AttributeError,TypeError,ValueError):
                     print(' Something went wrong')
-
+        i = i + 1
         pbar.update()
-    
+         
 except KeyboardInterrupt:
     pbar.close()
     print(' Downt\' leawwe me senpai')
