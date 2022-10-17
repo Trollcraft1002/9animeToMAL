@@ -71,7 +71,7 @@ try:
                     with tag('my_rated'):
                         text("")
                     with tag('my_score'):
-                        text(10)
+                        text("")
                     with tag('my_dvd'):
                         text("")
                     with tag('my_storage'):
