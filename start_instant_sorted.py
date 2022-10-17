@@ -12,9 +12,9 @@ print("Or this is gonna create incorrect results!!!")
 print("Continue on your own risk!")
 print("")
 sleep(3)
-print("Starting in 15 seconds...")
+print("Starting in 5 seconds...")
 print("")
-for i in tqdm(range(0,15)): 
+for i in tqdm(range(0,5)): 
     sleep(1)
     
 try:
@@ -59,23 +59,33 @@ try:
 
         if(animeName[i] == "Watching"):
             watching = True
+            planned = False
+            onHold = False
+            watched = False
+            dropped = False
             i= i + 1
-        elif (animeName[i] == "Planned"):
+        if (animeName[i] == "Planned"):
             watching = False
             planned = True
+            watched = False
+            onHold = False
+            dropped = False
             i= i + 1
-        elif (animeName[i] == "On-Hold"):
+        if (animeName[i] == "On-Hold"):
             watching = False
+            watched = False
             planned = False
             onHold = True
+            dropped = False
             i= i + 1
-        elif (animeName[i] == "Watched"):
+        if (animeName[i] == "Watched"):
                 watched = True
                 planned = False
                 onHold = False
                 watching = False
+                dropped = False
                 i= i + 1
-        elif (animeName[i] == "Dropped"):
+        if (animeName[i] == "Dropped"):
             watched = False
             planned = False
             onHold = False
@@ -89,7 +99,6 @@ try:
                     with tag('series_animedb_id'):
                         text(animeID)
                     with tag('series_title'):
-                        
                         text(animeName[i])
                     with tag('series_type'):
                         text("")
@@ -98,7 +107,10 @@ try:
                     with tag('my_id'):
                         text("0")
                     with tag('my_watched_episodes'):
-                        text("")
+                        if(watching == True):
+                            text("1")
+                        else:
+                            text("")
                     with tag('my_start_date'):
                         text("0000-00-00")
                     with tag('my_finish_date'):
@@ -115,9 +127,9 @@ try:
                         if(watching == True):
                             text("Watching")
                         elif(watched == True):
-                            text("Watched")
+                            text("Completed")
                         elif(planned == True):
-                            text("Planned")
+                            text("Plan to Watch")
                         elif(onHold == True):
                             text("On-Hold")
                         elif(dropped == True):
@@ -134,9 +146,14 @@ try:
                         text('0')
                     with tag('my_rewatching_ep'):
                         text('0')
+                    with tag('my_discuss'):
+                        text("1")
+                    with tag('my_sns'):
+                        text("default")
                     with tag('update_on_import'):
                         text('1')
-                
+
+
                 result = indent(
                 doc.getvalue(),
                 indentation = ' '*4,
