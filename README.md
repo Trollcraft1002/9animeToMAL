@@ -27,7 +27,13 @@
 
 - ✏️Rename the export to export.txt and put it in the same folder as the script  
   
-- ⌨️```python ./start.py```
+- ⌨️ ```python ./start.py``` Every anime will be marked as "Watched"
+
+- ⌨️ ```python ./start_sorted.py``` Still under development
+
+- ⌨️ ```python ./start_instant.py``` This will return xml file without the episodes being set and every anime will be marked as "Watched"
+
+- ⌨️ ```python ./start_instant_sorted.py``` This will reurn xml file without episodes being set but will be sorted (Watched, Watching, Dropped, On-Hold)
 
 ### AFTER GETTING THE XML FILE  
 - Get MAL export from here: http://myanimelist.net/panel.php?go=export  
