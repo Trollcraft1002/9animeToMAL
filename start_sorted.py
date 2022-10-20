@@ -1,7 +1,8 @@
 import re
-from time import sleep
 from unittest import result
+from mal import Anime
 from pathlib import Path
+from time import sleep
 from tqdm import tqdm
 from yattag import Doc, indent
 
@@ -23,7 +24,6 @@ try:
 except FileNotFoundError:
     print("Please make sure export.txt exists")
     exit()
-
 try:
     f = Path(__file__).with_name("export.txt")
     with f.open("r", encoding="utf-8") as f:
@@ -35,11 +35,12 @@ except FileNotFoundError:
     exit()
 
 animesID = []
-animeName = []
+name = []
 for ids in matches:
     animesID.append(ids[1])
 for names in matches2:
-    animeName.append(names[1])
+    name.append(names[1])
+
 
 f2 = open("./senpaii.xml", "w", encoding="utf-8")
 f2.write("")
@@ -53,45 +54,59 @@ watching = False
 onHold = False
 watched = False
 dropped = False
+failed = []
 
 try:
 
     for animeID in animesID:
 
-        if animeName[i] == "Watching":
+        if name[i] == "Watching":
             watching = True
             planned = False
             onHold = False
             watched = False
             dropped = False
             i += 1
-        if animeName[i] == "Planned":
+        if name[i] == "Planned":
             watching = False
             planned = True
             watched = False
             onHold = False
             dropped = False
             i += 1
-        if animeName[i] == "On-Hold":
+        if name[i] == "On-Hold":
             watching = False
             watched = False
             planned = False
             onHold = True
             dropped = False
             i += 1
-        if animeName[i] == "Watched":
+        if name[i] == "Watched":
             watched = True
             planned = False
             onHold = False
             watching = False
             dropped = False
             i += 1
-        if animeName[i] == "Dropped":
+        if name[i] == "Dropped":
             watched = False
             planned = False
             onHold = False
             watching = False
             dropped = True
+
+        try:
+
+            animeName = name[i]
+        except ValueError:
+            print(" Coudn't find anime " + animeID + " on MAL API :/ gonna continue...")
+            failed.append(animeID)
+        except Exception:
+            print(" Temporary blocked by MAL. Trying in 2 minutes...")
+            for i in tqdm(range(0, 120)):
+                sleep(1)
+            print(" Anime " + animeID + " was skipped please add it manually")
+            failed.append(animeID)
 
         doc, tag, text = Doc().tagtext()
         try:
@@ -100,17 +115,28 @@ try:
                     with tag("series_animedb_id"):
                         text(animeID)
                     with tag("series_title"):
-                        text(animeName[i])
+                        text(animeName)
                     with tag("series_type"):
-                        text("")
+                        text()
                     with tag("series_episodes"):
-                        text("")
+                        if watched or watching:
+                            anime = Anime(animeID)
+                            animeEp = anime.episodes
+                            text(animeEp)
+                        else:
+                            text("")
                     with tag("my_id"):
                         text("0")
                     with tag("my_watched_episodes"):
                         if watching == True:
                             text("1")
-                        else:
+                        elif watched == True:
+                            text(animeEp)
+                        elif planned == True:
+                            text("")
+                        elif onHold == True:
+                            text("")
+                        elif dropped == True:
                             text("")
                     with tag("my_start_date"):
                         text("0000-00-00")
@@ -160,12 +186,11 @@ try:
                 f2.write("\n")
                 f2.write(result)
                 f2.write("\n")
-                f2.close
         except (Exception, AttributeError, TypeError, ValueError):
-            print(" Something went wrong")
+            print(" Something went wrong... resuming progress...")
+            failed.append(animeID)
         i += 1
         pbar.update()
-
 except KeyboardInterrupt:
     pbar.close()
     exit()
@@ -173,3 +198,9 @@ f2.write("\n")
 f2.write("      <!-- Created by Trollcraft1002 exporter >_< -->")
 f2.close()
 pbar.close()
+
+if failed:
+    print("those failed to import")
+    for failedAnimes in failed:
+        print(failedAnimes)
+    print("please add them mannualy")

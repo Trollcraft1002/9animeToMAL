@@ -269,8 +269,6 @@ https://myanimelist.net/anime/42916/
 https://myanimelist.net/anime/40454/
 # Ranking of Kings
 https://myanimelist.net/anime/40834/
-# Chainsaw Man
-https://myanimelist.net/anime/44511/
 # Platinum End
 https://myanimelist.net/anime/44961/
 # Is It Wrong to Try to Pick Up Girls in a Dungeon? IV
@@ -297,6 +295,8 @@ https://myanimelist.net/anime/51781/
 https://myanimelist.net/anime/50612/
 # Solo Leveling
 https://myanimelist.net/anime/52299/
+# Peter Grill and the Philosopher’s Time: Super Extra
+https://myanimelist.net/anime/50348/
 ### Watched
 # Attack on Titan
 https://myanimelist.net/anime/16498/
@@ -441,8 +441,6 @@ https://myanimelist.net/anime/50265/
 ### On-Hold
 # One-Punch Man
 https://myanimelist.net/anime/30276/
-# Death Note
-https://myanimelist.net/anime/1535/
 # No Game, No Life
 https://myanimelist.net/anime/19815/
 # Mob Psycho 100 II
@@ -458,6 +456,8 @@ https://myanimelist.net/anime/20/
 https://myanimelist.net/anime/33206/
 # Overlord II
 https://myanimelist.net/anime/35073/
+# So I'm a Spider, So What?
+https://myanimelist.net/anime/37984/
 # The Helpful Fox Senko-san
 https://myanimelist.net/anime/38759/
 # Arifureta: From Commonplace to World's Strongest Season 2
@@ -468,11 +468,18 @@ https://myanimelist.net/anime/40586/
 https://myanimelist.net/anime/40974/
 # 86 EIGHTY-SIX
 https://myanimelist.net/anime/41457/
+# Chainsaw Man
+https://myanimelist.net/anime/44511/
 # Tokyo Revengers
 https://myanimelist.net/anime/42249/
 # The Great Jahy Will Not Be Defeated!
 https://myanimelist.net/anime/48753/
+# Reincarnated as a Sword
+https://myanimelist.net/anime/49891/
 # My Hero Academia Season 6
 https://myanimelist.net/anime/49918/
 # SPY x FAMILY Cour 2
 https://myanimelist.net/anime/50602/
+### Dropped
+# Death Note
+https://myanimelist.net/anime/1535/
