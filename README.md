@@ -18,7 +18,7 @@
 
 - ⌨️```pip install -r requirements.txt```
 
-- 🗒️Exported files from MAL and 9anime ```for sorted result please mark folders in 9anime when exporting```
+- 🗒️Exported files from MAL and 9anime ```For sorted result please mark folders in 9anime when exporting```
 
 ### HOW TO USE  
 - 🎥Youtube Video: https://youtu.be/jd7cEDvwj1c
