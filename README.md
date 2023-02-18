@@ -26,7 +26,7 @@
   
 - ✏️Rename the export to export.txt and put it in the same folder as the script  
   
-- ⌨️ ```python ./start.py``` Everything is included
+- ⌨️ ```python ./start.py``` 
 
 ### AFTER GETTING THE XML FILE  
 
