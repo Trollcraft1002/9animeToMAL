@@ -18,23 +18,19 @@
 
 - ⌨️```pip install -r requirements.txt```
 
-- 🗒️Exported files from MAL and 9anime ```For sorted result please mark folders in 9anime when exporting```
+- 🗒️Exported files from MAL and 9anime ```Please mark "Group by folder" in 9anime when exporting```
 
 ### HOW TO USE  
 
-- 🗒️You will need to get yours 9anime export in TXT file  
+- 🗒️You will need to get yours 9anime export in TXT file - ```Group by folder```
   
 - ✏️Rename the export to export.txt and put it in the same folder as the script  
   
-- ⌨️ ```python ./start.py``` Adds every anime but it will be marked as "Watched"
-
-- ⌨️ ```python ./start_sorted.py``` Everything is included
-
-- ⌨️ ```python ./start_instant.py``` This will return xml file with every anime without the episodes being set and every anime will be marked as "Watched"
-
-- ⌨️ ```python ./start_instant_sorted.py``` This will reurn xml file without episodes being set 
+- ⌨️ ```python ./start.py``` Everything is included
 
 ### AFTER GETTING THE XML FILE  
+
+
 - Get MAL export from here: http://myanimelist.net/panel.php?go=export  
   
 
